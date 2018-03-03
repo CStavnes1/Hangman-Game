@@ -12,11 +12,48 @@
     <!-- CSS Link -->
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 
-    <!-- Javacript Link 
-    <script type="text/javascript" src="assets/game..js"></script>-->
+    <!-- Javacript Link-->
+    <script type="text/javascript" src="./assets/javascript/game.js"></script>
 
 </head>
-<body>
-    <textarea> This is random stuff.</textarea> 
+<body onload="startUp()">
+
+<h1 class="header">HangMan!</h1>
+<h3 class="subheader">Welcome to the best game!</h2>
+
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-4">
+            <ul class="directions">
+                <p>Directions</p>
+                <li>lorrrrr</li>
+                <li>lorrrrr</li>
+                <li>lorrrrr</li>
+                <li>lorrrrr</li>
+                <li>lorrrrr</li>
+            </ul>
+        </div>
+        <div id="game">
+            <div class="col-sm-7">
+                <p>Let's Get Started</p>
+                <input id="letter" type="text'">
+                <button onclick="Letter()">click</button>
+                <br>
+                <br>
+                <p id="answer"></p>
+            </div>
+        </div>
+    </div>
+    <div class="boxbottom">
+        <div class="row">
+            <div class="col-sm-12">
+                <p>possibly enter the keyboard down here??????????????</p>
+            </div>
+        </div>
+    </div>
+</div>
+    
+
 </body>
 </html>
