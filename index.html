@@ -15,6 +15,12 @@
     <!-- Javacript Link-->
     <script type="text/javascript" src="./assets/javascript/game.js"></script>
 
+    <!-- J Query Link-->
+    <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
 </head>
 <body onload="startUp()">
 
@@ -37,8 +43,8 @@
         <div id="game">
             <div class="col-sm-7">
                 <p>Let's Get Started</p>
-                <input id="letter" type="text'">
-                <button onclick="Letter()">click</button>
+                <input id="letter" type="text"/>
+                <input type="button" value="letter" onClick="Letter()"/>
                 <br>
                 <br>
                 <p id="answer"></p>
