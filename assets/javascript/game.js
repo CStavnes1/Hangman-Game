@@ -4,8 +4,8 @@
 
 //defining an array to choose word from
 //radom selection of word from array
-const randomWordArr = ["cat", "duck", "whale"];
-const randomWord = randomWordArr[Math.floor(Math.random() * randomWordArr.length)];
+const words = ["cat", "duck", "whale"];
+const word = words[Math.floor(Math.random() * words.length)];
 //assigning a variable to the chosen words length
 //let chosenWordLength = chosenWord.length;
 
@@ -13,32 +13,37 @@ const randomWord = randomWordArr[Math.floor(Math.random() * randomWordArr.length
 let answerArray = [];
 
 function startUp() {
-    for (let i = 0; i < randomWord.length; i++) {
+    for (let i = 0; i < word.length; i++) {
         answerArray[i] = '_';
     };
 
-    let remainingLetter = randomWord.length;
-
-    //displaying the random word to the user
+    //displaying the random word to the user on the page
     let startingWord = answerArray.join(' ');
 
     $('#answer').append(startingWord);
-    alert(startingWord);
+alert(word);
+alert(startingWord);
+alert(answerArray);
 }
 
-alert(remainingLetter);
 
 function Letter() {
-    let letter = $('#letter').val();
 
-    if (letter.length > 0) {
-        for (let i = 0; i < randomWord.length; i++)
+    let guess = $('#letter').val();
+   
 
-            if (randomWord[i] === letter) {
-                answerArray[i] = letter
+    if (guess.length > 0) {
+
+        for (let j = 0; j < word.length; j++) {
+            if (word[j] === guess) {
+                alert(word[j]);
+                word[j] = guess;
+            } else {
+                alert('does not match')
             }
-    }
-    
-}
+        }
+        }
 
+
+    }
 

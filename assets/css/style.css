@@ -1,3 +1,9 @@
-textarea {
-    background-color: aqua;
+body {
+    margin: 10%;
+    background-color: #1aa2de;
+}
+
+.col-sm-7 {
+    margin-left: 5%;
+    text-align: center;
 }
